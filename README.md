@@ -2,8 +2,7 @@
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/burmatovdd/YandexSpellChecker?style=flat-square)
 ![GitHub top language](https://img.shields.io/github/languages/top/burmatovdd/YandexSpellChecker?style=flat-square)
-![GitHub repo size](https://img.shields.io/github/repo-size/burmatovdd/YandexSpellChecker?style=flat-square)
-![GitHub](https://img.shields.io/github/license/burmatovdd/YandexSpellChecker?style=flat-square)
+
 
 # :rocket: Запуск проекта
 > Запуск сервиса проверки текста  
