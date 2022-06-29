@@ -12,6 +12,10 @@
 > `cd testAllStrings`
 > `go run main.go`
 
+# :rocket: Запуск
+> Запуск версии для разработки  
+> `npm run dev`
+
 # :rocket: Запуск тестов
 > Запуск тестов для YandexSpellChecker
 > `cd mainProject/YandexSpellChecker`
