@@ -7,14 +7,13 @@
 # :rocket: Запуск проекта
 > Запуск сервиса проверки текста  
 > `cd mainProject`
+> 
 > `go run main.go`
 > Запуск сервиса, который отправляет тестовые запросы на сервис проверки текста
 > `cd testAllStrings`
 > `go run main.go`
 
-# :rocket: Запуск
-> Запуск версии для разработки  
-> `npm run dev`
+
 
 # :rocket: Запуск тестов
 > Запуск тестов для YandexSpellChecker
