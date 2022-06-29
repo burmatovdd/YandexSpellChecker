@@ -1,6 +1,5 @@
 # YandexSpellChecker
 
-![GitHub package.json version](https://img.shields.io/github/package-json/v/burmatovdd/YandexSpellChecker?style=flat-square)
 ![GitHub last commit](https://img.shields.io/github/last-commit/burmatovdd/YandexSpellChecker?style=flat-square)
 ![GitHub top language](https://img.shields.io/github/languages/top/burmatovdd/YandexSpellChecker?style=flat-square)
 ![GitHub repo size](https://img.shields.io/github/repo-size/burmatovdd/YandexSpellChecker?style=flat-square)
