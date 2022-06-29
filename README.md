@@ -13,6 +13,7 @@
 > Запуск сервиса, который отправляет тестовые запросы на сервис проверки текста
 > 
 > `cd testAllStrings`
+> 
 > `go run main.go`
 
 
@@ -20,9 +21,13 @@
 # :rocket: Запуск тестов
 > Запуск тестов для YandexSpellChecker
 > `cd mainProject/YandexSpellChecker`
+> 
 > `go test`
+> 
 > Запуск тестов для SpellChecker
+> 
 > `cd mainProject/SpellChecker`
+> 
 > `go test`
 
 # :package: Стек технологий
