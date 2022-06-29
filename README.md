@@ -9,7 +9,9 @@
 > `cd mainProject`
 > 
 > `go run main.go`
+> 
 > Запуск сервиса, который отправляет тестовые запросы на сервис проверки текста
+> 
 > `cd testAllStrings`
 > `go run main.go`
 
