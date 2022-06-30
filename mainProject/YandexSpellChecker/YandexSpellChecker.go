@@ -32,7 +32,6 @@ func New(url string) *YandexSpellChecker {
 	}
 }
 
-// тесты на эту функцию позитивыне и негативные
 func (checker *YandexSpellChecker) Check(value string) (SpellChecker.SpellCheckResult, error) {
 	newValue := strings.Join(strings.Split(value, " "), "+")
 	response, err := http.Get(checker.Config.Url + newValue)

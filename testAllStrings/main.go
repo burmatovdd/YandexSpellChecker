@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"net/http"
 	"strings"
 )
@@ -64,11 +63,10 @@ func main() {
 	}
 	for i := 0; i < len(texts); i++ {
 		newValue := strings.Join(strings.Split(texts[i], " "), "+")
-		resp, err := http.Get("http://localhost:8080/checkText?value=" + newValue)
+		_, err := http.Get("http://localhost:8080/checkText?value=" + newValue)
 		if err != nil {
 			return
 		}
-		fmt.Println(resp)
 	}
 
 }

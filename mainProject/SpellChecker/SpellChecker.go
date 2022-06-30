@@ -39,7 +39,6 @@ func New(checker SpellChecker) *SpellCheckerService {
 	}
 }
 
-// тест который MOQ
 func (service *SpellCheckerService) Check(value string) (SpellCheckResult, error) {
 	logger, _ := zap.NewProduction()
 	defer logger.Sync()
@@ -54,7 +53,6 @@ func (service *SpellCheckerService) Check(value string) (SpellCheckResult, error
 	result.SpellCheckerName = service.checker.GetName()
 
 	logger.Info("the information that came",
-		// Structured context as strongly typed Field values.
 		zap.String("data", value),
 		zap.Any("result", result),
 	)
