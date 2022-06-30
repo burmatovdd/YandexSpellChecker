@@ -1,21 +1,25 @@
 package main
 
 import (
-	"fmt"
 	"github.com/gin-gonic/gin"
+	"log"
 	"net/http"
 	"test.com/SpellChecker"
+	"test.com/Viper"
 	"test.com/YandexSpellChecker"
 )
 
 func main() {
-	// если проект побольше, необходимо использовать DI
-	service := SpellChecker.New(YandexSpellChecker.New("https://speller.yandex.net/services/spellservice.json/checkText?text="))
+	config, err := Viper.ConfigViper.LoadConfig(".")
+	if err != nil {
+		log.Fatal("cannot load config:", err)
+	}
+	service := SpellChecker.New(YandexSpellChecker.New(config.YANDEXURL))
 	router := gin.Default()
 	router.GET("/checkText", checkText(service))
-	err := router.Run(":8080")
+	err = router.Run(":8080")
 	if err != nil {
-		fmt.Println("err: ", err)
+		log.Fatal("err: ", err)
 	}
 }
 

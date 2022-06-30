@@ -61,6 +61,7 @@ func main() {
 		"Понеслась и его скрепучая музыка. Теперь всё поле поёт.",
 		"Все рады тёпламу летниму утру. Радосно и мне.",
 	}
+
 	for i := 0; i < len(texts); i++ {
 		newValue := strings.Join(strings.Split(texts[i], " "), "+")
 		_, err := http.Get("http://localhost:8080/checkText?value=" + newValue)
